@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sobre"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="vertical"
+   
+    tools:context=".BemVindoActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/appicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/bem_vindo_ao"
+            android:textColor="@color/branco"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/NomeCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descricao_app"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/cinza_claro" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/seus_dados_estarao"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/cinza_claro" />
+
+        <Button
+            android:id="@+id/buttonShowDropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/radius_branco"
+            android:onClick="naoTenho"
+            android:text="@string/nao_tenho_conta"
+            android:textColor="@color/azul_escuro" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_branco"
+            android:onClick="tenho"
+            android:text="@string/tenho_conta"
+            android:textColor="@color/azul_escuro" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/eu"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/azul_escuro" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_sobre">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+         >
+
+        <TextView
+            android:id="@+id/NomeCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/branco" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/telefoneCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/varsao"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/azul_mais_claro" />
+
+        <TextView
+            android:id="@+id/versao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textColor="@color/azul_mais_claro" />
+
+        <View
+            android:layout_width="162dp"
+            android:layout_height="1dp"
+            android:background="@color/azul_escuro_trans" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eu"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/cinza_claro" />
+
+    </LinearLayout>
+
+</LinearLayout>

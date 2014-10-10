@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titPopupEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/cinza_escuro" />
+<View 
+   android:layout_width="fill_parent"
+   android:layout_height="20dp" />
+
+<TextView
+    android:id="@+id/editaEndereco"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/cliente"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/ItemEditavel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+<View 
+   android:layout_width="fill_parent"
+   android:layout_height="20dp" />
+
+<TextView
+    android:id="@+id/editaTelefone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/telefone"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+<EditText
+    android:id="@+id/editTelefone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="phone"
+    android:maxLength="8" />
+<View 
+   android:layout_width="fill_parent"
+   android:layout_height="20dp" />
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/endereco"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+<EditText
+    android:id="@+id/editEndereco"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10" />
+
+</LinearLayout>

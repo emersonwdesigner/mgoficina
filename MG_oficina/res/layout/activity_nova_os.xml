@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cinza_claro"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LayOs" >
+         <LinearLayout
+             android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/os"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/azul_escuro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asterisco"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+         <EditText
+             android:id="@+id/os"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:inputType="number" >
+
+             <requestFocus />
+         </EditText>
+</LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp" >
+
+             <TextView
+                 android:id="@+id/textBancada"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/equipamento"
+                 android:textStyle="italic"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textColor="@color/azul_escuro" />
+
+             <TextView
+                 android:id="@+id/textView5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/asterisco"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+         </LinearLayout>
+
+         <EditText
+             android:id="@+id/descricao"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cliente"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/azul_escuro" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/asterisco"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
+    </LinearLayout>
+<View 
+   android:layout_width="fill_parent"
+   android:layout_height="1dp"       
+   android:background="@color/cinza_escuro"/>
+    <LinearLayout
+        android:id="@+id/LayCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="10dp"
+        android:background="@drawable/abs__search_dropdown_light"
+        android:visibility="gone"
+         
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nome"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/cinza_mais_escuro" 
+            android:textStyle="italic"/>
+
+		<EditText
+		    android:id="@+id/editCliente"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:enabled="false" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/telefone"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/cinza_mais_escuro"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/mostraTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+             android:textColor="@color/azul_escuro" 
+            android:enabled="false"/>
+
+        <TextView
+            android:id="@+id/keyidCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/endereco"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/cinza_mais_escuro" 
+            android:textStyle="italic"/>
+		<EditText
+            android:id="@+id/mostraEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:enabled="false"/>
+       
+        <TextView
+            android:id="@+id/IdCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayNovoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/abs__search_dropdown_light" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/telefCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novo_cliente"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editNovoCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/endCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editNovoTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" 
+            android:maxLength="8"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endereco"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editNovoEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/clienteUnico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+<View 
+   android:layout_width="fill_parent"
+   android:layout_height="1dp"       
+   android:background="@color/cinza"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttonClientes"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="@string/clientes" 
+            android:onClick="clientes"/>
+
+        <Button
+            android:id="@+id/buttonNovoCliente"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="@string/novo_cliente"
+            android:onClick="novoCliente" />
+
+    </LinearLayout>
+
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cinza"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/dataHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dados_adicionais"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/cinza_mais_escuro" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:text="@string/defeito_ed"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/azul_escuro" />
+
+    </LinearLayout>
+
+ <EditText
+     android:id="@+id/editDefeito"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:ems="10" />
+  
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acessórios"
+            android:textStyle="italic"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/azul_escuro" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editAcessorio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <ImageView
+        android:id="@+id/viewImage"
+        android:layout_width="299dp"
+        android:layout_height="200dp"
+        android:src="@drawable/no_image_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/selecionar_foto" />
+    </LinearLayout>
+
+  
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:visibility="gone" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/cinza"
+     android:padding="10dp" >
+
+    <Button
+        android:id="@+id/salvar"
+        style="@style/Sherlock.__Theme.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="add_os2"
+        android:text="@string/salvar" />
+
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@drawable/ic_action_sort"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_sort"/>
+    <item
+        android:id="@+id/menu_search"
+        android:actionLayout="@layout/layout_search"
+        android:icon="@drawable/search"
+        android:orderInCategory="0"
+        android:showAsAction="always|collapseActionView"
+        android:title="@string/search"/>
+
+</menu>

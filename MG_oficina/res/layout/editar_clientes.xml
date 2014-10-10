@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:padding="10dp"
+     >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/nome"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textStyle="italic"/>
+
+         <EditText
+             android:id="@+id/editarNome"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:inputType="text" 
+              />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/telefone"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textStyle="italic"/>
+
+         <EditText
+             android:id="@+id/editarTelefone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:inputType="number" 
+             android:maxLength="8"/>
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/endereco"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textStyle="italic" />
+          
+         <EditText
+             android:id="@+id/editarEndereco"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:inputType="text"
+              />
+
+         <TextView
+             android:id="@+id/keyidCliente"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="gone"
+             android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       
+</LinearLayout>

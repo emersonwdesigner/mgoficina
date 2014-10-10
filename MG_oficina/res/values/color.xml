@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="opaque_red">#f00</color>
+   <color name="translucent_red">#80ff0000</color>
+   <color name="azul_escuro">#007ca5</color>
+   <color name="azul_claro">#33b5e5</color>
+   <color name="azul_mais_claro">#BDDFEE</color>
+   <color name="branco">#ffffff</color>
+   <color name="cinza_claro">#E5ECEF</color>
+   <color name="cinza">#CCD3D6</color>
+   <color name="cinza_escuro">#999999</color>
+   <color name="cinza_mais_escuro">#666666</color>
+   <color name="cinza_mais_escuro_trans">#80333333</color>
+   <color name="verde_trans">#90027C0C</color>
+   <color name="verde">#027C0C</color>
+   <color name="azul_escuro_trans">#90045B77</color>
+   <color name="preto">#000000</color>
+   <color name="laranja">#FF8F00</color>
+</resources>

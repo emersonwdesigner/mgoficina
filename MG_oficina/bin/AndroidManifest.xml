@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mgoficina"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gmail.permission.READ_GMAIL" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.mgoficina.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mgoficina.NovaActivity"
+            android:label="@string/title_activity_nova"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.FormBuscaActivity"
+            android:label="@string/title_activity_nova"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.SearchActivity"
+            android:label="@string/title_activity_nova"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.SingleActivity"
+            android:label="@string/title_activity_nova"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.SingleActivityEdit"
+            android:label="@string/title_activity_nova"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.ListaTrabalhosActivity"
+            android:label="@string/title_activity_lista_trabalhos"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.NovaOsActivity"
+            android:label="@string/title_activity_nova_os"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.FechaLoteActivity"
+            android:label="@string/title_activity_fechar_lote"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.DefinicoesActivity"
+            android:label="@string/definicoes"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+
+        <service android:name="com.mgoficina.ExportaService" >
+            <intent-filter>
+                <action android:name="MGO_INICIAR_EXPORTACAO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.mgoficina.FechaLoteService" >
+            <intent-filter>
+                <action android:name="MGO_FECHAR_LOTE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.mgoficina.BackupService" >
+            <intent-filter>
+                <action android:name="MGO_RESPOSTA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.mgoficina.UserActivity"
+            android:label="@string/dados_usuario"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.RecuperaDadosActivity"
+            android:label="@string/title_activity_recupera_dados"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.PerfilActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+
+        <service android:name="com.mgoficina.DeletaService" >
+            <intent-filter>
+                <action android:name="MGO_DELETA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.mgoficina.BemVindoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.SobreActivity"
+            android:label="@string/sobre"
+            android:screenOrientation="portrait" 
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.mgoficina.ClientesActivity"
+            android:label="@string/title_activity_clientes"
+            android:screenOrientation="portrait" 
+            android:theme="@style/Theme.Sherlock.Light"
+            >
+        </activity>
+        <activity
+            android:name="com.mgoficina.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.mgoficina.ServidorActivity"
+            android:label="@string/title_activity_servidor" >
+        </activity>
+        
+    </application>
+
+</manifest>

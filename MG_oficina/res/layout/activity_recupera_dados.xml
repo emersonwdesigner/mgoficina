@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/cinza_claro">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     
+     android:gravity="center_horizontal"
+     android:orientation="vertical"
+     android:padding="15dp" >
+
+     <TextView
+         android:id="@+id/NomeCliente"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/digite_email"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="@color/azul_escuro" />
+
+     <View
+         android:layout_width="181dp"
+         android:layout_height="1dp"
+         android:layout_marginBottom="10dp"
+         android:background="@color/cinza_escuro" />
+
+     <TextView
+         android:id="@+id/nomePerfil"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/deve_ser_email"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textStyle="italic"
+         android:textColor="@color/cinza_mais_escuro" />
+
+     <EditText
+         android:id="@+id/editEmail"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:ems="10"
+         android:inputType="textEmailAddress" >
+
+         <requestFocus />
+     </EditText>
+
+     <ProgressBar
+         android:id="@+id/carrega"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:visibility="gone" />
+
+
+     <Button
+         android:id="@+id/enviaCodig"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_weight="0.25"
+         android:background="@drawable/radius_cinza"
+         android:onClick="enviaCodigo"
+         android:padding="10dp"
+         android:text="@string/enviar_codigo"
+         android:textColor="@color/branco" />
+
+     <TextView
+         android:id="@+id/enderecoCliente"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/sera_enviado_email"
+         android:textStyle="italic"
+         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     <Button
+         android:id="@+id/jaTem"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/radius"
+         android:onClick="jaPossui"
+         android:padding="10dp"
+         android:text="@string/ja_tenho_codigo"
+         android:textColor="@color/branco" />
+
+     <LinearLayout
+         android:id="@+id/jaCodigo"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_horizontal"
+         android:orientation="vertical"
+         android:visibility="gone" >
+<View 
+   android:layout_width="fill_parent"
+   android:layout_height="1dp"   
+   android:layout_marginTop="10dp"
+   android:layout_marginBottom="10dp"   
+   android:background="@color/cinza_escuro"/>
+         <TextView
+             android:id="@+id/erroSenhaAtual"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/digite_codigo"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="@color/azul_escuro" />
+
+         <EditText
+             android:id="@+id/digCodigo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10" />
+
+          <ProgressBar
+         android:id="@+id/carregaCode"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:visibility="gone" />
+          
+         <Button
+             android:id="@+id/enviaCodigo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:background="@drawable/radius"
+             android:padding="10dp"
+             android:text="@string/iniciar_recuperacao"
+             android:textColor="@color/branco" 
+             android:onClick="iniciarBackup"/>
+     </LinearLayout>
+ </LinearLayout>
+
+</ScrollView>
